@@ -289,8 +289,8 @@ HTTP 204
 #### JSON de envio ⬆️
  ```bash
 {
-    "usuário":"user",
-    "senha":"password"
+    "username":"user",
+    "password":"password"
 }
 ```
 #### Resposta ⬇️ 
