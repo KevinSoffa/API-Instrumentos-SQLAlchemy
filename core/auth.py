@@ -2,17 +2,17 @@
 
 from datetime import datetime, timedelta
 from typing import Optional
+from decouple import config
 
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 from fastapi import Depends, HTTPException, status
-# Altere o OAuth2PasswordBearer para HTTPBearer
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
 
 # Config
-SECRET_KEY = "CHAVE"
-ALGORITHM = "HS256"
+SECRET_KEY = config("SECRET_KEY")
+ALGORITHM = config("ALGORITHM")
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 # Para hash de senhas

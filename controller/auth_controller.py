@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
+from decouple import config
 from datetime import timedelta
 from core.auth import create_access_token, verify_password, get_password_hash, ACCESS_TOKEN_EXPIRE_MINUTES
 
@@ -9,8 +10,8 @@ router = APIRouter(prefix="/auth", tags=["Auth"])
 
 # Usuário fake (poderia vir do banco)
 fake_user = {
-    "username": "kevin",
-    "hashed_password": get_password_hash("123456")
+    "username": config("USER_NAME_LOGIN"),
+    "hashed_password": get_password_hash(config("PASSWORD_LOGIN"))
 }
 
 @router.post("/login")
