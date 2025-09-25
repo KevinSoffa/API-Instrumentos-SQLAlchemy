@@ -34,6 +34,9 @@ Além disso, a aplicação conta com testes automatizados, garantindo a qualidad
 </div>
 
 ## Desenvolvimento 👨‍💻
+<img src="https://raw.githubusercontent.com/KevinSoffa/API-Instrumentos-SQLAlchemy/refs/heads/master/img/API%20Instrumentos%20ORM.drawio.png" height="400" alt="python logo"/>
+
+---
 `Controller` ✅
 - Gerenciar as requisições `HTTP`
 -  🟢**GET**
