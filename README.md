@@ -12,7 +12,7 @@
 4. [Configuração do Ambiente](#-configuração-do-ambiente)
 5. [Modo de Uso](#modo-de-uso-)
 6. [Testes Automatizados](#testes-automatizados-)
-7. [Autenticação JWT](#-autenticação-jwt)
+7. [Autenticação JWT](#-autenticação-jwt-no-fastapi)
 8. [ORM SQLAlchemy](#️orm-sqlalchemy)
 
 ---
